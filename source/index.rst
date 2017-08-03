@@ -11,7 +11,8 @@ It roughly falls into the same category of combinator languages like Q and conce
 predates languages like Miranda, ML or Haskell.
 
 The language is homoicionic and supports symbolic rewriting, 
-exceptions and namespaces. Below, a small example is shown.
+exceptions and namespaces. 
+To get a taste of the language a small example is shown below.
 
 .. code-block:: egel 
 
@@ -37,5 +38,4 @@ Indices and tables
 ==================
 
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
