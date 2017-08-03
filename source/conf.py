@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # Egel Language documentation build configuration file, created by
-# sphinx-quickstart on Thu Aug  3 01:39:45 2017.
+# sphinx-quickstart on Thu Aug  3 02:34:17 2017.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -30,7 +30,7 @@
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = []
+extensions = ['sphinx.ext.autodoc']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
