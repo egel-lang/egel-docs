@@ -11,6 +11,8 @@ Welcome to Egel Language's documentation!
    :caption: Contents:
 
 
+Here the documentation on the Egel language will occur.
+
 
 Indices and tables
 ==================
