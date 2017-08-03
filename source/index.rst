@@ -5,6 +5,8 @@ The Egel Language
    :maxdepth: 2
    :caption: Contents:
 
+   install.rst
+
 Egel is a small toy language based on untyped eager combinator rewriting.
 
 It roughly falls into the same category of combinator languages like Q and conceptually
