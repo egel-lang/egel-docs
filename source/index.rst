@@ -12,7 +12,7 @@ Egel is a small toy language based on untyped eager combinator rewriting.
 It roughly falls into the same category of combinator languages like Q and conceptually
 predates languages like Miranda, ML or Haskell.
 
-The language is homoicionic and supports symbolic rewriting, 
+The language is homoiconic and supports symbolic rewriting, 
 exceptions and namespaces. 
 To get a taste of the language a small example is shown below.
 
