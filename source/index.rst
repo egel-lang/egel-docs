@@ -1,16 +1,37 @@
-.. Egel Language documentation master file, created by
-   sphinx-quickstart on Thu Aug  3 02:34:17 2017.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-Welcome to Egel Language's documentation!
-=========================================
+The Egel Language
+=================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
+Egel is a small toy language based on untyped eager combinator rewriting.
 
+It roughly falls into the same category of combinator languages like Q and conceptually
+predates languages like Miranda, ML or Haskell.
+
+The language is homoicionic and supports symbolic rewriting, 
+exceptions and namespaces. Below, a small example is shown.
+
+.. code-block:: egel 
+
+    namespace Fibonnaci (
+      using System
+
+      def fib =
+        [ 0 -> 1
+        | 1 -> 1
+        | N -> fib (N-2) + fib (N-1) ]
+    )
+
+    using Fibonnaci
+
+    def main = fib 5
+
+The interpreter is implemented in C++. Sources can be downloaded from
+Github_.
+
+.. _Github: https://github.com/egel-lang/
 
 Indices and tables
 ==================
