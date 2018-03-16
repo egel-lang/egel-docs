@@ -7,7 +7,7 @@ I would like to thank the following people.
 on FreeBSD with clang. No luck so far, but that might change!
 
 `mahmudov@freenode.net` who was a great help in building the compiler
-and added the interpreter to the (Milis)[https://milislinux.org/] 
+and added the interpreter to the `Link Milis <https://milislinux.org/>`_ 
 Linux distribution.
 
 `lijero@freenode.net` for wise comments.
