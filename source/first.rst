@@ -9,7 +9,7 @@ Hello World
 
 The cannonical example to start with a new language is
 "hello world". Edit the file `hello.eg` and add the
-folling content.
+following content.
 
 .. code-block:: egel
 

@@ -46,8 +46,8 @@ where variables are uppercase.
 
 .. code-block:: egel
 
-    >> [ X -> X ] "id"
-    "id"
+    >> [ X -> X ] 5
+    5
 
 The anonymous pattern-matching combinator may consist of multiple
 alternatives which pattern match from left to right. You can
