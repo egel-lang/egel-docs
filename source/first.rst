@@ -70,13 +70,17 @@ space. Let's move on to the venerable Fibonacci.
 
     def main = fib 5
 
-A small evaluator
------------------
+Multiple scripts
+----------------
 
 Of course, you'll want to use and define small data
 structures. That's easy in Egel, small constants can
 function as constructors, although when you become more 
 advanced you will often just leave them away.
+
+Let's pretend this is serious business and split our
+new application into two files.
+Put the following code in the file `eval.eg`.
 
 .. code-block:: egel
 
@@ -93,8 +97,16 @@ advanced you will often just leave them away.
 
     )
 
+And write the folling text to `main.eg`.
+
+.. code-block:: egel
+
+    import "eval.eg"
+
     using Eval
 
     def main = eval (sum 3 (mul 2 7))
 
+The `import` directive tells the interpreter where to look.
+Running `egel main.eg` should give `17`.
 
