@@ -8,6 +8,7 @@ The Egel Language
    intro.rst
    install.rst
    calc.rst
+   first.rst
 
 Indices and tables
 ==================
