@@ -62,8 +62,14 @@ You can match against multiple values.
 
 .. code-block:: egel
 
-    >> [ X, Y -> X + Y ] 1 2
+    >> [ X, Y -> X - Y ] 4 1
     3
+
+.. caution::
+
+    Often, you will want to put a space after a `-` symbol. Can
+    you guess why? It's because constants compose, so `2-1` are
+    the two constants `2` and `-1`. Make sure to insert the space!
 
 You can define combinators as named abstractions for terms.
 
@@ -73,7 +79,7 @@ You can define combinators as named abstractions for terms.
     >> id "Hi!"
     "Hi!"
 
-Definitions may be recursive.
+Definitions may mention themselves, then they are recursive.
 
 .. code-block:: egel
 
@@ -81,11 +87,12 @@ Definitions may be recursive.
     >> fac 3
     6
 
-.. caution::
+.. note::
 
-    Often, you will want to put a space after a `-` symbol. Can
-    you guess why? It's because constants compose, so `2-1` are
-    the two constants `2` and `-1`. Make sure to insert the space!
+    If you don't understand the above definition then try replacing
+    `fac` in the term `fac 3`. Like this, `fac 3 = 3 * fac (3 - 1) 
+    = 3 * fac 2 = 3 * 2 * fac 1 = 3 * 2 * 1 = 6`. Otherwise,
+    look up 'recursion' on the Internet. Good luck!
 
 Egel refuses to rewrite, or reduce, definitions where none of the
 patterns matched.
