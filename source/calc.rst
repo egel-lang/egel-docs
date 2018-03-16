@@ -15,7 +15,7 @@ The smallest Egel expression is a constant.
     >> 0
     0
 
-Multiple constants also form a term.
+Multiple constants compose.
 
 .. code-block:: egel
 

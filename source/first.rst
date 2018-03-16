@@ -7,7 +7,7 @@ is a collection of scripts driven by a `main` function.
 Hello World
 -----------
 
-The cannonical example to start with a new language is
+We'll start with the cannonical example for a new language 
 "hello world". Edit the file `hello.eg` and add the
 following content.
 
@@ -32,7 +32,11 @@ More functions
 --------------
 
 More functions make for more interesting scripts. Let's
-start of with a function you should know, Fibbonaci.
+start of with a function you should know, faculty.
+
+The interpreter starts with a clean slate, you'll need
+to give a `using System` directive to access the builtin
+math combinators.
 
 .. code-block:: egel
 
@@ -67,6 +71,35 @@ space.
 
     )
 
-    def main = Fibbonaci.fib 5
+    using Fibbonaci
+
+    def main = fib 5
+
+A small evaluator
+-----------------
+
+Of course, you'll want to use and define small data
+structures. That's easy in Egel, small constants can
+function as constructors, although when you become more 
+advanced you will often just leave them away.
+
+.. code-block:: egel
+
+    namespace Eval (
+
+        using System
+
+        data sum, mul
+
+        def eval =
+            [ sum X Y -> X + Y
+            | mul X Y -> X * Y
+            | X -> X ]
+
+    )
+
+    using Eval
+
+    def main = eval (sum 3 (mul 2 7))
 
 
