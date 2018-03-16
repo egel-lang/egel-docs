@@ -14,7 +14,7 @@ To get a taste of the language a small example is shown below.
 
 .. code-block:: egel 
 
-    namespace Fibonnaci (
+    namespace Fibonacci (
       using System
 
       def fib =
@@ -23,7 +23,7 @@ To get a taste of the language a small example is shown below.
         | N -> fib (N - 2) + fib (N - 1) ]
     )
 
-    using Fibonnaci
+    using Fibonacci
 
     def main = fib 5
 

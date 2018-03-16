@@ -26,8 +26,6 @@ Run the example with the Egel interpreter.
     user$ egel hello.eg
     Hello world!
 
--- UNDER CONSTRUCTION FROM HERE --
-
 More functions
 --------------
 
@@ -56,11 +54,11 @@ Adding namespaces
 
 Functions live in namespaces. A namespace starts with
 a capital letter and names all combinators within the
-space.
+space. Let's move on to the venerable Fibonacci.
 
 .. code-block:: egel
 
-    namespace Fibbonaci (
+    namespace Fibonacci (
 
         using System
 
@@ -71,7 +69,7 @@ space.
 
     )
 
-    using Fibbonaci
+    using Fibonacci
 
     def main = fib 5
 
