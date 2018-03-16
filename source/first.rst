@@ -26,6 +26,8 @@ Run the example with the Egel interpreter.
     user$ egel hello.eg
     Hello world!
 
+-- UNDER CONSTRUCTION FROM HERE --
+
 More functions
 --------------
 
