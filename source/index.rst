@@ -9,6 +9,7 @@ The Egel Language
    install.rst
    calc.rst
    first.rst
+   thanks.rst
 
 Indices and tables
 ==================
