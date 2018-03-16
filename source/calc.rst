@@ -85,7 +85,7 @@ Definitions may be recursive.
 
     Often, you will want to put a space after a `-` symbol. Can
     you guess why? It's because constants compose, so `2-1` are
-    the two constants `2 -1`. Make sure to insert the space!
+    the two constants `2` and `-1`. Make sure to insert the space!
 
 Egel refuses to rewrite, or reduce, definitions where none of the
 patterns matched.
