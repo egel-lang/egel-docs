@@ -40,10 +40,7 @@ math combinators.
 
     using System
 
-    def fib =
-        [ 0 -> 1
-        | 1 -> 1
-        | N -> fib (N - 1) + fib (N - 2) ]
+    def fac = [ 1 -> 1 | N * fac (N - 1) ]
 
     def main = fib 5
 
