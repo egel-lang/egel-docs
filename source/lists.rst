@@ -52,7 +52,7 @@ A length function is the first we'll try.
     >> length {'a', 1}
     2
 
-Egel is untyped, you'ld might make a type and apply
+Egel is untyped, you'ld might make a typo and apply
 `length` to something not a list. Can you guess what will
 happen?
 
