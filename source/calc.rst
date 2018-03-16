@@ -37,10 +37,10 @@ You can define your own constant combinators. Constants are lower-case.
     >> two
     two
 
-The anonymous pattern-matching abstraction
+The nameless pattern-matching abstraction
 ------------------------------------------
 
-The basic work-horse of Egel is the anonymous pattern-matching
+The basic work-horse of Egel is the nameless pattern-matching
 combinator. Roughly similar to an untyped lambda abstraction,
 where variables are uppercase.
 
@@ -49,7 +49,7 @@ where variables are uppercase.
     >> [ X -> X ] 5
     5
 
-The anonymous pattern-matching combinator may consist of multiple
+The nameless pattern-matching combinator may consist of multiple
 alternatives which pattern match from left to right. You can
 mix variables and constants in patterns.
 
