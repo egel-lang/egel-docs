@@ -51,6 +51,7 @@ a capital letter and names all combinators within the
 space.
 
 .. code-block:: egel
+
     namespace Fibbonaci (
 
         def fib =
