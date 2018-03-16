@@ -78,8 +78,9 @@ structures. That's easy in Egel, small constants can
 function as constructors, although when you become more 
 advanced you will often just leave them away.
 
-Let's pretend this is serious business and split our
+While we're at it, let's pretend this is serious business and split our
 new application into two files.
+
 Put the following code in the file `eval.eg`.
 
 .. code-block:: egel
@@ -97,7 +98,7 @@ Put the following code in the file `eval.eg`.
 
     )
 
-And write the folling text to `main.eg`.
+And write the following text to `main.eg`.
 
 .. code-block:: egel
 
