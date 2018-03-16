@@ -2,7 +2,7 @@ The calculus
 ============
 
 Egel is a small combinator calculus with a limited number
-constructs. Below, that calculus is introduced with small
+of constructs. Below, that calculus is introduced with small
 examples
 
 Constants
