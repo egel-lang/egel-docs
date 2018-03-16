@@ -1,9 +1,9 @@
 The calculus
 ============
 
-Egel is a small combinator calculus with a limited number
+Egel is based upon a small combinator calculus with a limited number
 of constructs. Below, that calculus is introduced with small
-examples
+examples.
 
 Constants
 ---------
