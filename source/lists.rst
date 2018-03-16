@@ -36,7 +36,7 @@ Creating a list is trivial.
 
 But that's a lot of typing. Egel provides what is
 called syntactic sugar for lists, a shorthand
-notion employing curly brackets.
+notation employing curly brackets.
 
 .. code-block:: egel
 
