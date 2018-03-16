@@ -64,5 +64,63 @@ happen?
 The patterns are exhausted therefor the term will fail to
 reduce.
 
+Functional programmers adore lists, there's a lot you
+can do with them, if not everything. Egel suplies a number
+of convenience routines in the `List` namespace in the 
+`prelude`.
 
+
+.. code-block:: egel
+
+    >> import "prelude.eg"
+    >> using List
+
+I'll assume that you know some functional programming,
+this is an introduction to the Egel programming language,
+not a course on that. But, standardly, we can apply any
+function `f` to any list with the `map` combinator.
+
+.. code-block:: egel
+
+    >> map [X -> X + 1] {0,1}
+    (System.cons 1 (System.cons 2 System.nil))
+    
+And the important `foldl` is defined too. It's a useful
+operator but don't go overboard with it!
+
+.. code-block:: egel
+
+    >> foldl (+) 0 {1,2,3}
+    6
+    
+`foldl` will fold a function and a constant over a list,
+`foldl (+) 0 {1,2,3} = 1 + (2 + (3 + 0))`. It's a summation.
+
+Tuples
+------
+
+Tuples in languages are used to group things. It's a useful
+feature which you don't always need in Egel since constants
+compose. Let's find out how they work.
+
+Like lists, tuples are syntactic sugar for applying the
+`tuple` constant out of the `System` namespace to a number
+of arguments.
+
+.. code-block:: egel
+
+    >> (1,"hi")
+    (System.tuple 1 "hi")
+
+Again, it's all untyped so we can try to match against
+a tuple to find out how many fields it has.
+
+.. code-block:: egel
+
+    >> def c = [ (X,Y) -> 2 | (X,Y,Z) -> 3 ]
+    >> c ("what", "a", "night")
+    3
+
+That's all for that subject. If you start programming Egel
+you'll find many more useful constructs.
 
