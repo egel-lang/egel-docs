@@ -50,12 +50,20 @@ where variables are uppercase.
     "id"
 
 The anonymous pattern-matching combinator may consist of multiple
-alternatives which pattern match from left to right.
+alternatives which pattern match from left to right. You can
+mix variables and constants in patterns.
 
 .. code-block:: egel
 
-    >> [ 0 -> "zero | 1 -> "one" ] 1
+    >> [ 0 -> "zero | 1 -> "one" | X -> "a lot" ] 1
     "one"
+
+You can match against multiple values.
+
+.. code-block:: egel
+
+    >> [ X, Y -> X + Y ] 1 2
+    3
 
 You can define combinators as named abstractions for terms.
 
