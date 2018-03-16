@@ -63,7 +63,7 @@ You can define combinators as named abstractions for terms.
 
     >> def id = [ X -> X ]
     >> id "Hi!"
-    "Hi1"
+    "Hi!"
 
 Definitions may be recursive.
 
