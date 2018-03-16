@@ -34,6 +34,8 @@ start of with a function you should know, Fibbonaci.
 
 .. code-block:: egel
 
+    using System
+
     def fib =
         [ 0 -> 1
         | 1 -> 1
@@ -53,6 +55,8 @@ space.
 .. code-block:: egel
 
     namespace Fibbonaci (
+
+        using System
 
         def fib =
             [ 0 -> 1

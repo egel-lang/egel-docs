@@ -97,14 +97,14 @@ the term.
 Helpful shorthands
 ------------------
 
-With `let` you can bind a variable to a value.
+With `let/in` you can bind a variable to a value.
 
 .. code-block:: egel
 
     >> let X = 3 in X + 2
     5
 
-A condition consists of an if/then/else statement.
+A condition consists of an `if/then/else` statement.
 
 .. code-block:: egel
 
@@ -114,14 +114,16 @@ A condition consists of an if/then/else statement.
 Exceptions and exception handling
 ---------------------------------
 
-Egel supports exceptions, you can throw any value anywhere.
+Egel supports exceptions, you can `throw` any value anywhere.
 
 .. code-block:: egel
 
     >> 1 + throw "don't go here"
     exception("don't go here")
 
-You can also catch exceptions in a try/catch block.
+You can also catch exceptions in a `try/catch` block. It reduces
+the try part, any exception thrown in there will handled by
+the provided catch handler.
 
 .. code-block:: egel
 
