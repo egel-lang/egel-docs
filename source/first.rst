@@ -42,7 +42,7 @@ math combinators.
 
     def fac = [ 1 -> 1 | N * fac (N - 1) ]
 
-    def main = fib 5
+    def main = fac 5
 
 Save it somewhere, run it, and it should give you a number.
 
