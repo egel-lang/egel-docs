@@ -103,10 +103,10 @@ A condition consists of an if/then/else statement.
     >> if 3 < 5 then "smaller" else "larger"
     "smaller"
 
-Egel supports exceptions. You can throw any value anywhere.
-
 Exceptions and exception handling
 ---------------------------------
+
+Egel supports exceptions, you can throw any value anywhere.
 
 .. code-block:: egel
 
