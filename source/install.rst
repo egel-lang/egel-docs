@@ -37,6 +37,11 @@ A number of example scripts are provided in the examples directory.
 If you set up your system correctly, you can run any of them
 with the command `egel example.eg`.
 
+.. code-block:: bash
+
+    user$ egel examples/fib.eg
+    10946
+
 The interpreter has a REPL, an interactive mode, but doesn't 
 support line editing or completion. I use the console
 program `rlwrap` for that. It should be installed or be
@@ -48,6 +53,7 @@ At the prompt of the Egel interpreter you can type small
 expressions.
 
 .. code-block:: egel
+
     >> 1 + 2
     3
 
@@ -55,6 +61,7 @@ However, you'll likely want more functionality. It is recommended
 you always import the prelude and open the necessary namespaces.
 
 .. code-block:: egel
+
     >> import "prelude.eg"
     >> using System
     >> using List
