@@ -1,5 +1,5 @@
-Introduction
-============
+A Swift Introduction
+====================
 
 Egel is based on untyped eager combinator rewriting. Or, stated
 differently, Egel is an untyped lambda calculus with constants
@@ -102,8 +102,6 @@ You can also catch exceptions in a try/catch block.
     ("caught:" "don't go here")
 
 That's the whole calculus, you can now program in Egel. 
-Now let's continue with some interesting things!
-
 
 .. _Github: https://github.com/egel-lang/
 
