@@ -92,8 +92,8 @@ Put the following code in the file `eval.eg`.
         data sum, mul
 
         def eval =
-            [ sum X Y -> X + Y
-            | mul X Y -> X * Y
+            [ sum X Y -> eval X + eval Y
+            | mul X Y -> eval X * eval Y
             | X -> X ]
 
     )
