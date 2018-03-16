@@ -1,4 +1,3 @@
-A Swift Introduction
 The calculus
 ============
 
