@@ -25,7 +25,7 @@ To get a taste of the language a small example is shown below.
       def fib =
         [ 0 -> 1
         | 1 -> 1
-        | N -> fib (N-2) + fib (N-1) ]
+        | N -> fib (N - 2) + fib (N - 1) ]
     )
 
     using Fibonnaci
