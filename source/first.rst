@@ -1,7 +1,7 @@
 Your First Programs
 ===================
 
-Let's move on an define some programs. An Egel program
+Let's move on and define some programs. An Egel program
 is a collection of scripts driven by a `main` function.
 
 Hello World
