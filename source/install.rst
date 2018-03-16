@@ -20,19 +20,46 @@ That should give you an interpreter named `egel` in the `src` directory
 and a number of dynamically loadable Egel object files in the
 `include` directory.
 
-An installation script is not provided since Linux systems tend
-to have divergent opinions on where to place different parts of
-a tool.
+Installing the interpreter
+--------------------------
+To install the system run the `install.sh` script as root.
 
-Instead, please note that you only need the interpreter named
-`egel` and all files in the `include` directory if you want to
-do anything useful.
+If you don't want a system-wide install, please note that you only need the 
+interpreter named `egel` and all files in the `include` directory 
+if you want to do anything useful.
 You can set the environment variable `EGEL_INCLUDE` to point
 at the latter path.
+
+Using the interpreter
+---------------------
 
 A number of example scripts are provided in the examples directory.
 If you set up your system correctly, you can run any of them
 with the command `egel example.eg`.
+
+The interpreter has a REPL, an interactive mode, but doesn't 
+support line editing or completion. I use the console
+program `rlwrap` for that. It should be installed or be
+provided by your distribution. To use the interpreter
+in interactive mode with line editing run the command
+`rlwrap egel`.
+
+At the prompt of the Egel interpreter you can type small
+expressions.
+
+.. code-block:: egel
+    >> 1 + 2
+    3
+
+However, you'll likely want more functionality. It is recommended
+you always import the prelude and open the necessary namespaces.
+
+.. code-block:: egel
+    >> import "prelude.eg"
+    >> using System
+    >> using List
+    >> foldl (+) 0 {1,2,3}
+    6
 
 .. _Github: https://github.com/egel-lang/
 

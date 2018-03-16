@@ -6,6 +6,7 @@ The Egel Language
    :caption: Contents:
 
    install.rst
+   intro.rst
 
 Egel is a small toy language based on untyped eager combinator rewriting.
 
