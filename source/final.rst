@@ -26,13 +26,9 @@ from that although you can discuss those conclusions endlessly.
    unsafe extensions which ameliorate that a bit but in principle
    you don't have access to that. The language is Turing complete
    but you'll need to be an avid functional programmer.
-
-   My reason for going with a DAG is that I hope that will
-   pay off somewhere in the distant future. The idea is that
-   you can get away with local analysis for garbage collection
-   and as memory grows and processors get more cores at some
-   point that will pay off in comparison to other schemes
-   which need global analysis.
+   I hope that going with a DAG will pay off in the distant
+   future since it trades off global analysis for local
+   analysis during garbage collection.
 
 4. C++. That's another trade-off. C++ objects are heavyweight
    so you pay again in performance but you get a bit more reliable
