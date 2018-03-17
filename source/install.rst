@@ -22,7 +22,8 @@ and a number of dynamically loadable Egel object files in the
 
 Installing the interpreter
 --------------------------
-To install the system run the `install.sh` script as root.
+To install the system run the `install.sh` script as root. On a Fedora
+system..
 
 If you don't want a system-wide install, please note that you only need the 
 interpreter named `egel` and all files in the `include` directory 
