@@ -12,6 +12,7 @@ The Egel Language
    lists.rst
    life.rst
    conc.rst
+   final.rst
    thanks.rst
 
 Indices and tables
