@@ -13,7 +13,7 @@ exceptions, namespaces, and concurrency.
 Semantically, the implementation is morally equivalent to an eager term rewriter on
 a directed acyclic graph with a small twist for performance.
 
-To get a taste of the language a small example is shown below.
+To get a taste of the language an example is shown below.
 
 .. code-block:: egel 
 
