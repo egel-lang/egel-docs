@@ -48,9 +48,11 @@ again.
     >> [ X -> par [ _ -> X * 3 ] [ _ -> X + 5 ] ] 4
     (System.tuple 12 9)
 
+Parallel Fibonacci
+------------------
+
 With all what we know now, we can implement parallel
 Fibonacci.
-
 
 .. code-block:: egel
 
