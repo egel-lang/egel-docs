@@ -134,21 +134,21 @@ you'll find many more useful constructs.
     Egel has a concise syntax, so you might easily get confused 
     between alternatives.
 
-    The folowing reduces two arguments.
+    The folowing reduces two arguments. Two patterns, each one variable.
 
     .. code-block:: egel
 
         >> [X, Y -> X] 0 1
         0
 
-    And this rewrites two composed constants.
+    And this rewrites two composed constants. One pattern of two variables.
 
     .. code-block:: egel
 
         >> [X Y -> X] (0 1)
         0
 
-    And finally, this rewrites a tuple.
+    And finally, this rewrites a tuple. One pattern using sugar for a tuple.
 
     .. code-block:: egel
 
