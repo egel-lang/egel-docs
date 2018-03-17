@@ -15,8 +15,8 @@ from that although you can discuss those conclusions endlessly.
    matter much, with types you just pay a little for static guarantees.
 
 2. Terms are rewritten. Well, that's likely not a fast language
-   and although the interpreter gives reasonable performance it
-   isn't fast. Though through Herculean effort, term rewrite systems
+   and although the interpreter gives reasonable performance it indeed
+   isn't fast. Though, through Herculean effort, term rewrite systems
    can be made performant, I don't have that much time. However,
    the interpreter gives you a pretty robust system, and that's
    worth something too.
