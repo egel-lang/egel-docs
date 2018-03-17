@@ -75,15 +75,20 @@ of convenience routines in the `List` namespace in the
     >> import "prelude.eg"
     >> using List
 
-I'll assume that you know some functional programming,
-this is an introduction to the Egel programming language,
-not a course on that. But, standardly, we can apply any
+I'll assume that you know some functional programming.
+Standardly, we can apply any
 function `f` to any list with the `map` combinator.
 
 .. code-block:: egel
 
     >> map [X -> X + 1] {0,1}
     (System.cons 1 (System.cons 2 System.nil))
+
+This documentation is on the Egel language, it's not
+an introduction to functional programming. But did
+you get what happened there? `map` applied `[X->X+1]`
+to both elements of the list `{0,1}` resulting in
+the list `{1,2}`.
     
 And the important `foldl` is defined too. It's a useful
 operator but don't go overboard with it!
