@@ -24,8 +24,8 @@ from that although you can discuss those conclusions endlessly.
 3. It rewrites a DAG. Right, no mutation since that would mean
    you could introduce cycles. The interpreter implements some
    unsafe extensions which ameliorate that a bit but in principle
-   you don't have access to that. The language is Turing complete
-   but you'll need to be an avid functional programmer.
+   you don't have access to that. The language is Turing complete,
+   however, you'll need to be an avid functional programmer.
    I hope that going with a DAG will pay off in the distant
    future since it trades off global analysis for local
    analysis during garbage collection.
