@@ -18,7 +18,7 @@ from that although you can discuss those conclusions endlessly.
    and although the interpreter gives reasonable performance it indeed
    isn't fast. Though, through Herculean effort, term rewrite systems
    can be made performant, I don't have that much time. However,
-   the interpreter gives you a pretty robust system, and that's
+   the interpreter gives you a pretty robust system and that's
    worth something too.
 
 3. It rewrites a DAG. Right, no mutation since that would mean
