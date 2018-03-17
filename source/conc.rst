@@ -2,7 +2,7 @@ Concurrency
 ===========
 
 Because Egel is a term rewrite language, it is trivial
-to rewrite term in parallel. Concurrency is provided
+to rewrite terms in parallel. Concurrency is provided
 through a combinator.
 
 Parallel rewriting
@@ -25,8 +25,7 @@ and returns a tuple containing both results.
     just `par (1+2) (3+4)` the interpreter would have
     reduced the arguments to `par` first, resulting
     in the parallel reduction of `par 3 7`. By wrapping
-    the computation in an abstraction we deferred it's
-    evalution.
+    the computations their evalution is deferred.
 
 We can inspect what arguments are given to the abstractions
 of `par`.
