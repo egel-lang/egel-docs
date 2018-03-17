@@ -30,7 +30,7 @@ More functions
 --------------
 
 More functions make for more interesting scripts. Let's
-start of with a function you should know, faculty.
+start of with a function you should know, factorial.
 
 The interpreter starts with a clean slate, you'll need
 to give a `using System` directive to access the builtin
