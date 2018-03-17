@@ -1,7 +1,7 @@
 Conway's Game of Life
 =====================
 
-To show-case that Egel can be used to write real
+To showcase that Egel can be used to write real
 programs I'll walk you through an example of 
 a small Conway's life application. I'll assume you
 know some functional programming, some territory not
