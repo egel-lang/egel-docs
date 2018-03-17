@@ -77,12 +77,11 @@ deconstruct the pair returned and add both components.
 
 Nifty, huh?
 
-.. caution:: egel
+.. caution:: 
 
-    Though morally Egel should support massive cheap concurrency
-    since a term is a pointer and there's little overhead, the
+    Though morally Egel could support cheap concurrency, the
     `par` combinator is implemented with the C++ thread library,
-    i.e., probably is implemented upon system threads.
+    thus with system threads.
 
     System threads are a bit heavyweight and easy to run out
     of. On my machine, I can start upto roughly 20,000 threads.
