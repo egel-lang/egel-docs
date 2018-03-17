@@ -43,7 +43,7 @@ notation employing curly brackets.
     >> {'a', 1}
     (System.cons 'a' (System.cons 1 System.nil))
 
-Of course, you'ld like to define functions on these.
+Of course, you like to define functions on these.
 A length function is the first we'll try.
 
 .. code-block:: egel
@@ -52,7 +52,7 @@ A length function is the first we'll try.
     >> length {'a', 1}
     2
 
-Egel is untyped, you'ld might make a typo and apply
+Egel is untyped, you might make a typo and apply
 `length` to something not a list. Can you guess what will
 happen?
 
