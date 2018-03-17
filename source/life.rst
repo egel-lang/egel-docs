@@ -71,6 +71,7 @@ To insert an alive cell, we update the stencil with a clause
 mapping two matching coordinates to an alive cell.
 
 .. code-block:: egel
+
     def insert =
         [ X, Y, BOARD -> 
             [ X0, Y0 -> if and (X0 == X) (Y0 == Y) then 1
@@ -103,6 +104,7 @@ Printing a board is done by going over all coordinates and printing the
 cell for that coordinate.
 
 .. code-block:: egel
+
     def printboard =
         [ BOARD ->
             let M  = map [XX -> let _ = map [X Y -> printcell (BOARD X Y)] XX in print "\n" ] coords in
