@@ -29,7 +29,7 @@ Like a lot of languages, comments spanning multiple
 lines start with `/*` and end with `*/`. Single-line
 comments start with `//`.
 
-We'll rely on combinator defined in `prelude.eg` and
+We'll rely on combinators defined in `prelude.eg` and
 `io.ego`. A `.ego` file is an object file, a binary
 on your system.
 
@@ -111,7 +111,7 @@ cell for that coordinate.
                 nop ]
 
 
-.. note:: egel
+.. note:: 
 
     Though Egel combinators may be side-effecting they must reduce to a value.
     `IO.print` will print all its arguments but will reduce to the uninformative
