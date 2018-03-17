@@ -18,12 +18,12 @@ To get a taste of the language an example is shown below.
 .. code-block:: egel 
 
     namespace Fibonacci (
-      using System
+        using System
 
-      def fib =
-        [ 0 -> 1
-        | 1 -> 1
-        | N -> fib (N - 2) + fib (N - 1) ]
+        def fib =
+            [ 0 -> 1
+            | 1 -> 1
+            | N -> fib (N - 2) + fib (N - 1) ]
     )
 
     using Fibonacci
