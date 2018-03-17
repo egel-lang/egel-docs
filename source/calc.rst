@@ -55,7 +55,7 @@ mix variables and constants in patterns.
 
 .. code-block:: egel
 
-    >> [ 0 -> "zero | 1 -> "one" | X -> "a lot" ] 1
+    >> [ 0 -> "zero" | 1 -> "one" | X -> "a lot" ] 1
     "one"
 
 You can match against multiple values.
