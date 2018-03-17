@@ -141,7 +141,7 @@ you'll find many more useful constructs.
         >> [X, Y -> X] 0 1
         0
 
-    And this rewrites to composed constants.
+    And this rewrites two composed constants.
 
     .. code-block:: egel
 
