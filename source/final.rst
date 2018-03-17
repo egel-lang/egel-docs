@@ -33,9 +33,7 @@ from that although you can discuss those conclusions endlessly.
 4. C++. That's another trade-off. C++ objects are heavyweight
    so you pay again in performance but you get a bit more reliable
    system back. The good part is that it is relatively easy
-   to safely drop C++ functionality into combinators which
-   means the interpreter will easily bind to a lot of implemented
-   functionality.
+   to safely drop C++ functionality into combinators.
 
 In conclusion, Egel is a solution for people who need a 
 small declarative easily extendable language which effortlessly binds
