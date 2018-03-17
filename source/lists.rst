@@ -129,3 +129,28 @@ a tuple to find out how many fields it has.
 That's all for that subject. If you start programming Egel
 you'll find many more useful constructs.
 
+.. note::
+
+    Egel has a concise syntax, so you might easily get confused 
+    between alternatives.
+
+    The folowing reduces two arguments.
+
+    .. code-block:: egel
+
+        >> [X, Y -> X] 0 1
+        0
+
+    And this rewrites to composed constants.
+
+    .. code-block:: egel
+
+        >> [X Y -> X] (0 1)
+        0
+
+    And finally, this rewrites a tuple.
+
+    .. code-block:: egel
+
+        >> [(X, Y) -> X] (0, 1)
+        0
