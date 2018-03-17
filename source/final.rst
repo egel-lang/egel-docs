@@ -1,4 +1,4 @@
-Okay. Where now?
+Okay, Where Now?
 ================
 
 Egel is a toy language implementing an eager untyped combinator
