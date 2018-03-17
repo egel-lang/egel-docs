@@ -1,4 +1,4 @@
-The calculus
+The Calculus
 ============
 
 Egel is based upon a small combinator calculus with a limited number

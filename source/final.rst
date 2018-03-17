@@ -1,5 +1,5 @@
-Okay, Where Now?
-================
+Discussion
+==========
 
 Egel is a toy language implementing an eager untyped combinator
 calculus as a term rewriting system on a directed acyclic graph (DAG)
