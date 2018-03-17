@@ -10,6 +10,9 @@ predates languages like Miranda, ML or Haskell.
 The language is homoiconic and supports symbolic rewriting, 
 exceptions, namespaces, and concurrency. 
 
+Semantically, the implementation is morally equivalent to an eager term rewriter on
+a directed acyclic graph.
+
 To get a taste of the language a small example is shown below.
 
 .. code-block:: egel 
