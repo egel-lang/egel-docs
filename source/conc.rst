@@ -64,7 +64,7 @@ Fibonacci.
       def pfib = 
         [ 0 -> 0 
         | 1 -> 1 
-        | X -> [ (F0, F1) -> F0 + F1 ] (par [Y -> pfib (X - 1) ] [Z-> pfib (X - 2)]) ]
+        | X -> [ (F0, F1) -> F0 + F1 ] (par [_ -> pfib (X - 1) ] [_-> pfib (X - 2)]) ]
 
     )
 

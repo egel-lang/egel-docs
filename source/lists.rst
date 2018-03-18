@@ -138,14 +138,14 @@ you'll find many more useful constructs.
 
     .. code-block:: egel
 
-        >> [X, Y -> X] 0 1
+        >> [X Y -> X] 0 1
         0
 
     And this rewrites two composed constants. One pattern of two variables.
 
     .. code-block:: egel
 
-        >> [X Y -> X] (0 1)
+        >> [(X Y) -> X] (0 1)
         0
 
     And finally, this rewrites a tuple. One pattern using sugar for a tuple.

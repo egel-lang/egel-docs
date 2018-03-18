@@ -62,7 +62,7 @@ You can match against multiple values.
 
 .. code-block:: egel
 
-    >> [ X, Y -> X - Y ] 4 1
+    >> [ X Y -> X - Y ] 4 1
     3
 
 .. caution::

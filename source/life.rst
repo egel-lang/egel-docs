@@ -65,7 +65,7 @@ The empty grid maps all coordinates to dead cells.
 
 .. code-block:: egel
 
-    def empty = [ X, Y -> 0 ]
+    def empty = [ X Y -> 0 ]
 
 To insert an alive cell, we update the stencil with a clause
 mapping two matching coordinates to an alive cell.
@@ -73,8 +73,8 @@ mapping two matching coordinates to an alive cell.
 .. code-block:: egel
 
     def insert =
-        [ X, Y, BOARD -> 
-            [ X0, Y0 -> if and (X0 == X) (Y0 == Y) then 1
+        [ X Y BOARD -> 
+            [ X0 Y0 -> if and (X0 == X) (Y0 == Y) then 1
                         else BOARD X0 Y0 ] ]
 
 To get to all coordinates we map multiple times on the list
@@ -85,7 +85,7 @@ Note that we don't need to tuple explicitly.
 
     def coords =
         let R = fromto 0 (boardsize - 1) in
-            [ XX, YY -> map (\X -> map (\Y -> X Y) YY) XX ] R R
+            [ XX YY -> map (\X -> map (\Y -> X Y) YY) XX ] R R
 
 Printing
 --------
@@ -107,7 +107,7 @@ cell for that coordinate.
 
     def printboard =
         [ BOARD ->
-            let M  = map [XX -> let _ = map [X Y -> printcell (BOARD X Y)] XX in print "\n" ] coords in
+            let M  = map [XX -> let _ = map [(X Y) -> printcell (BOARD X Y)] XX in print "\n" ] coords in
                 nop ]
 
 
@@ -127,7 +127,7 @@ looking around.
 .. code-block:: egel
 
     def count =
-        [ BOARD, X, Y ->
+        [ BOARD X Y ->
             (BOARD (X - 1) (Y - 1)) + (BOARD (X) (Y - 1)) + (BOARD (X+1) (Y - 1)) +
             (BOARD (X - 1) Y) + (BOARD (X+1) Y) +
             (BOARD (X - 1) (Y+1)) + (BOARD (X) (Y+1)) + (BOARD (X+1) (Y+1)) ]
@@ -138,8 +138,8 @@ is alive or dead and the number of neighbours.
 .. code-block:: egel
 
     def next =
-        [ 0, N -> if N == 3 then 1 else 0
-        | _, N -> if or (N == 2) (N == 3) then 1 else 0 ]
+        [ 0 N -> if N == 3 then 1 else 0
+        | _ N -> if or (N == 2) (N == 3) then 1 else 0 ]
 
 A board is updated by applying the above function `next` to every coordinate
 on the board.
@@ -148,9 +148,9 @@ on the board.
 
     def updateboard =
         [ BOARD ->
-            let XX = map (\X Y -> X Y (BOARD X Y) (count BOARD X Y)) (flatten coords) in
-            let YY = map (\X Y C N -> X Y (next C N)) XX in
-                foldr [X Y 0, BOARD -> BOARD | X Y _, BOARD -> insert X Y BOARD ] empty YY ]
+            let XX = map (\(X Y) -> X Y (BOARD X Y) (count BOARD X Y)) (flatten coords) in
+            let YY = map (\(X Y C N) -> X Y (next C N)) XX in
+                foldr [(X Y 0) BOARD -> BOARD | (X Y _) BOARD -> insert X Y BOARD ] empty YY ]
 
 A blinker
 ---------
