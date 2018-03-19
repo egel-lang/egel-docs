@@ -43,12 +43,14 @@ with the command `egel example.eg`.
     user$ egel examples/fib.eg
     10946
 
-The interpreter has a REPL, an interactive mode, but doesn't 
-support line editing or completion. I use the console
-program `rlwrap` for that. It should be installed or be
-provided by your distribution. To use the interpreter
-in interactive mode with line editing run the command
-`rlwrap egel`.
+.. tip::
+
+    The interpreter has a REPL, an interactive mode, but doesn't 
+    support line editing or completion. I use the console
+    program `rlwrap` for that. It should be installed or be
+    provided by your distribution. To use the interpreter
+    in interactive mode with line editing run the command
+    `rlwrap egel`.
 
 At the prompt of the Egel interpreter you can type small
 expressions.
