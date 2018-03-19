@@ -64,7 +64,7 @@ happen?
 The patterns are exhausted therefor the term will fail to
 reduce.
 
-Functional programmers adore lists, there's a lot you
+Functional programmers adore lists, there's a lot one
 can do with them, if not everything. Egel suplies a number
 of convenience routines in the `List` namespace in the 
 `prelude`.

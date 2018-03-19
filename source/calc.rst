@@ -127,7 +127,7 @@ A condition consists of an `if/then/else` statement.
 Exceptions and exception handling
 ---------------------------------
 
-Egel supports exceptions, you can `throw` any value anywhere.
+Egel supports exceptions, `throw` any value anywhere.
 
 .. code-block:: egel
 
