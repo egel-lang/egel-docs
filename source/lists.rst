@@ -43,7 +43,7 @@ notation employing curly brackets.
     >> {'a', 1}
     (System.cons 'a' (System.cons 1 System.nil))
 
-Of course, you like to define functions on these.
+Let's proceed with defining functions on lists.
 A length function is the first we'll try.
 
 .. code-block:: egel
@@ -68,7 +68,6 @@ Functional programmers adore lists, there's a lot one
 can do with them, if not everything. Egel suplies a number
 of convenience routines in the `List` namespace in the 
 `prelude`.
-
 
 .. code-block:: egel
 
