@@ -9,7 +9,7 @@ Parallel rewriting
 ------------------
 
 If you want to have two computations run in parallel
-you use the `par` combinator. It takes two abstractions
+use the `par` combinator. It takes two abstractions
 to be reduced, applies both of them to a dummy argument,
 and returns a tuple containing both results.
 

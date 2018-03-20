@@ -113,7 +113,7 @@ cell for that coordinate.
 
 .. note:: 
 
-    Though Egel combinators may be side-effecting they must reduce to a value.
+    Though Egel combinators may be side-effecting, they must reduce to a value.
     `IO.print` will print all its arguments but will reduce to the uninformative
     value `System.nop`. Often, with side-effecting calculations these values
     are simply discarded. The semicolon separates such statements.
