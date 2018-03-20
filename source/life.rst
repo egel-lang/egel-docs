@@ -170,8 +170,7 @@ We print three generations of a board with a blinker.
         let GEN0 = blinker empty in
         let GEN1 = updateboard GEN0 in
         let GEN2 = updateboard GEN1 in
-        let _ = map [ G -> print "generation:\n"; printboard G ] {GEN0, GEN1, GEN2} in
-            nop
+            foldl [_ G -> print "generation:\n"; printboard G ] nop {GEN0, GEN1, GEN2}
 
 And that wraps it up. A real Egel application.
 
