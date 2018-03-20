@@ -78,7 +78,7 @@ mapping two matching coordinates to an alive cell.
                         else BOARD X0 Y0 ] ]
 
 To get to all coordinates we map multiple times on the list
-`{0,boardsize-1}` to retrieve the pairs `{0 0, 0 1, ..}`.
+`{0,boardsize-1}` to retrieve the pairs `{{0 0, 0 1, ..},..}`.
 Note that we don't need to tuple explicitly.
 
 .. code-block:: egel
@@ -100,6 +100,8 @@ have side effects.
         [ 0 -> print ". "
         | _ -> print "* " ]
 
+A wildcard pattern `_` is used to match against any value.
+
 Printing a board is done by going over all coordinates and printing the
 cell for that coordinate.
 
@@ -107,7 +109,7 @@ cell for that coordinate.
 
     def printboard =
         [ BOARD ->
-            let M  = map [XX -> let _ = map [(X Y) -> printcell (BOARD X Y)] XX in print "\n" ] coords in
+            let M  = map [XX -> map [(X Y) -> printcell (BOARD X Y)] XX; print "\n" ] coords in
                 nop ]
 
 
@@ -116,7 +118,7 @@ cell for that coordinate.
     Though Egel combinators may be side-effecting they must reduce to a value.
     `IO.print` will print all its arguments but will reduce to the uninformative
     value `System.nop`. Often, with side-effecting calculations these values
-    are simply discarded.
+    are simply discarded. The semicolon separates such statements.
 
 Generations
 -----------
@@ -170,7 +172,7 @@ We print three generations of a board with a blinker.
         let GEN0 = blinker empty in
         let GEN1 = updateboard GEN0 in
         let GEN2 = updateboard GEN1 in
-        let _ = map [ G -> let _ = print "generation:\n" in printboard G ] {GEN0, GEN1, GEN2} in
+        let _ = map [ G -> print "generation:\n"; printboard G ] {GEN0, GEN1, GEN2} in
             nop
 
 And that wraps it up. A real Egel application.
