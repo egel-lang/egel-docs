@@ -30,7 +30,7 @@ from that although you can discuss those conclusions endlessly.
    future since it trades off global analysis for local
    analysis during garbage collection.
 
-4. C++. That's another trade-off. C++ objects are heavyweight
+4. C++. That's another tradeoff. C++ objects are heavyweight
    so you pay again in performance but you get a bit more reliable
    system back. The good part is that it is relatively easy
    to safely drop C++ functionality into combinators.
