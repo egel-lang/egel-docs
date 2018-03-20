@@ -78,7 +78,7 @@ mapping two matching coordinates to an alive cell.
                         else BOARD X0 Y0 ] ]
 
 To get to all coordinates we map multiple times on the list
-`{0,boardsize-1}` to retrieve the pairs `{{0 0, 0 1, ..},..}`.
+`{0,..,boardsize-1}` to retrieve the pairs `{{0 0, 0 1, ..},..}`.
 Note that we don't need to tuple explicitly.
 
 .. code-block:: egel
