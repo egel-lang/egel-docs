@@ -109,9 +109,7 @@ cell for that coordinate.
 
     def printboard =
         [ BOARD ->
-            let M  = map [XX -> map [(X Y) -> printcell (BOARD X Y)] XX; print "\n" ] coords in
-                nop ]
-
+            foldl [_ XX -> map [(X Y) -> printcell (BOARD X Y)] XX; print "\n" ] nop coords ]
 
 .. note:: 
 
