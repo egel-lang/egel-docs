@@ -17,7 +17,7 @@ and returns a tuple containing both results.
 
     >> using System
     >> par [ _ -> 1 + 2 ] [ _ -> 3 + 4 ]
-    (System.tuple 3 7)
+    (System:tuple 3 7)
 
 .. note::
     The `par` combinator takes two abstractions because 
@@ -34,7 +34,7 @@ of `par`.
 
     >> using System
     >> par [ X -> X ] [ X -> X ]
-    (System.tuple System.nop System.nop)
+    (System:tuple System:nop System:nop)
 
 Hardly interesting.
 
@@ -46,7 +46,7 @@ again.
 
     >> using System
     >> [ X -> par [ _ -> X * 3 ] [ _ -> X + 5 ] ] 4
-    (System.tuple 12 9)
+    (System:tuple 12 9)
 
 Parallel Fibonacci
 ------------------

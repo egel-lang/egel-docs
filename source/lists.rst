@@ -25,14 +25,14 @@ mode.
 
     >> using System
     >> nil
-    System.nil
+    System:nil
 
 Creating a list is trivial.
 
 .. code-block:: egel
 
     >> cons 'a' (cons 1 nil)
-    (System.cons 'a' (System.cons 1 System.nil))
+    (System:cons 'a' (System:cons 1 System:nil))
 
 But that's a lot of typing. Egel provides what is
 called syntactic sugar for lists, a shorthand
@@ -41,7 +41,7 @@ notation employing curly brackets.
 .. code-block:: egel
 
     >> {'a', 1}
-    (System.cons 'a' (System.cons 1 System.nil))
+    (System:cons 'a' (System:cons 1 System:nil))
 
 Let's proceed with defining functions on lists.
 A length function is the first we'll try.
@@ -81,7 +81,7 @@ function `f` to any list with the `map` combinator.
 .. code-block:: egel
 
     >> map [X -> X + 1] {0,1}
-    (System.cons 1 (System.cons 2 System.nil))
+    (System:cons 1 (System:cons 2 System:nil))
 
 This documentation is on the Egel language, it's not
 an introduction to functional programming. But did
@@ -114,7 +114,7 @@ of arguments.
 .. code-block:: egel
 
     >> (1,"hi")
-    (System.tuple 1 "hi")
+    (System:tuple 1 "hi")
 
 Again, it's all untyped so we can try to match against
 a tuple to find out how many fields it has.

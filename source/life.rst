@@ -114,8 +114,8 @@ cell for that coordinate.
 .. note:: 
 
     Though Egel combinators may be side-effecting, they must reduce to a value.
-    `IO.print` will print all its arguments but will reduce to the uninformative
-    value `System.nop`. Often, with side-effecting calculations these values
+    `IO:print` will print all its arguments but will reduce to the uninformative
+    value `System:nop`. Often, with side-effecting calculations these values
     are simply discarded. The semicolon separates such statements.
 
 Generations
@@ -160,7 +160,7 @@ A blinker consists of three alive cells next to each other.
 .. code-block:: egel
 
     def blinker =
-        (insert 1 2) @ (insert 2 2) @ (insert 3 2)
+        (insert 1 2) . (insert 2 2) . (insert 3 2)
 
 We print three generations of a board with a blinker.
 
