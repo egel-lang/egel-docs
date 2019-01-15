@@ -21,13 +21,12 @@ comment on what it implements.
 
 .. code-block:: egel
 
-    /**
-     * Conway's Game of Life.
-     */
+     ####
+     # Conway's Game of Life.
+     #
 
-Like a lot of languages, comments spanning multiple
-lines start with `/*` and end with `*/`. Single-line
-comments start with `//`.
+Like a lot of languages, single-line
+comments start with `#`.
 
 We'll rely on combinators defined in `prelude.eg` and
 `io.ego`. A `.ego` file is an object file, a binary
