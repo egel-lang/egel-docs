@@ -32,16 +32,9 @@ Creating a list is trivial.
 .. code-block:: egel
 
     >> cons 'a' (cons 1 nil)
-    (System:cons 'a' (System:cons 1 System:nil))
+    {'a', 1}
 
-But that's a lot of typing. Egel provides what is
-called syntactic sugar for lists, a shorthand
-notation employing curly brackets.
-
-.. code-block:: egel
-
-    >> {'a', 1}
-    (System:cons 'a' (System:cons 1 System:nil))
+Curly braces are syntactic sugar for lists.
 
 Let's proceed with defining functions on lists.
 A length function is the first we'll try.
@@ -81,7 +74,7 @@ function `f` to any list with the `map` combinator.
 .. code-block:: egel
 
     >> map [X -> X + 1] {0,1}
-    (System:cons 1 (System:cons 2 System:nil))
+    {1, 2}
 
 This documentation is on the Egel language, it's not
 an introduction to functional programming. But did
