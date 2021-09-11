@@ -8,28 +8,15 @@ and compile it yourself.
 Building from sources
 ---------------------
 
-The interpreter is developed on a Linux system and uses libicu for
-Unicode support. You need to have GCC/g++, the GNU compiler chain,
-and the development files for libicu
-installed. Most Linux package managers will provide that for you.
+The interpreter is developed on MacOS/Linux system. 
+You need to have the compiler chains for gcc or llvm, cmake,
+and the development files for icu and fmt
+installed. Most Linux/Macos package managers will provide that for you.
 
 The sources can be obtained from Github_.
 
-To compile the system run the `build.sh` script.
-That should give you an interpreter named `egel` in the `src` directory
-and a number of dynamically loadable Egel object files in the
-`include` directory.
-
-Installing the interpreter
---------------------------
-To install the system run the `install.sh` script as root. On a Fedora
-system..
-
-If you don't want a system-wide install, please note that you only need the 
-interpreter named `egel` and all files in the `include` directory 
-if you want to do anything useful.
-You can set the environment variable `EGEL_INCLUDE` to point
-at the latter path.
+Compilation follows the default cmake scheme, read the README
+text in the distribution.
 
 Using the interpreter
 ---------------------
