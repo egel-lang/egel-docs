@@ -119,7 +119,7 @@ reuse it without passing it around explicitly. Secondly,
 due to technical reasons all definitions are wrapped in
 lambda abstractions you sometimes want to get rid off.
 
-.. code_block:: egel
+.. code-block:: egel
 
      val x = heavy_computation somenumber
      
