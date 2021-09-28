@@ -12,4 +12,7 @@ and added it to the `Milis <https://milislinux.org/>`_ Linux distribution.
 `lijero@freenode.net` for wise comments and `b_jonas@libera.net` for short scripts and
 intelligent advise.
 
+The Free Software Foundation (FSF) for their gracious support with access to their 
+compile farm.
+
 Come visit on channel `#egel` on `irc.freenode.net`.
