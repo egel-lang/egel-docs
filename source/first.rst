@@ -16,35 +16,32 @@ following content.
     def main = "Hello world!"
 
 An Egel script is a text file which may define one `main`
-function. You don't have to do that, but then it won't
-run anything.
+function.
 
-Run the example with the Egel interpreter.
+You can run the example with the Egel interpreter.
 
 .. code-block:: bash
 
     user$ egel hello.eg
     Hello world!
 
-More functions
---------------
+Interactive Mode
+----------------
 
-More functions make for more interesting scripts. Let's
-start of with a function you should know, factorial.
+Apart from batch mode, you can also run the intpreter
+interactively.
 
-The interpreter starts with a clean slate, you'll need
-to give a `using System` directive to access the builtin
-math combinators.
+The interpreter starts with a clean slate, you'll usually
+want to start of with a `using System` directive to access 
+the built-in combinators.
 
-.. code-block:: egel
+.. code-block:: bash
 
-    using System
-
-    def fac = [ 1 -> 1 | N * fac (N - 1) ]
-
-    def main = fac 5
-
-Save it somewhere, run it, and it should give you a number.
+    user$ egel
+    > using System
+    > def fac = [ 0 -> 1 | N * fac (N - 1) ]
+    > fac 5
+    120
 
 Adding namespaces
 -----------------
@@ -78,8 +75,8 @@ structures. That's easy in Egel, small constants can
 function as constructors, although when you become more 
 advanced you will often just leave them away.
 
-While we're at it, let's pretend this is serious business and split our
-new application into two files.
+While we're at it, let's pretend this is serious business 
+and split our new application into two files.
 
 Put the following code in the file `eval.eg`.
 
@@ -111,3 +108,19 @@ And write the following text to `main.eg`.
 The `import` directive tells the interpreter where to look.
 Running `egel main.eg` should give `17`.
 
+Values
+------
+
+Values are combinator definitions where the body is reduced
+then assigned. This serves a two-fold purpose.
+
+For one, often you'll want to compute a value once and then
+reuse it without passing it around explicitly. Secondly,
+due to technical reasons all definitions are wrapped in
+lambda abstractions you sometimes want to get rid off.
+
+.. code_block:: egel
+
+     val x = heavy_computation somenumber
+     
+     def main = (x, x)
