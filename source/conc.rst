@@ -98,7 +98,7 @@ provided below.
 
 .. code-block:: egel
 
-    > def id = [ X -> (X,  id) ]
+    > def id = [ MSG -> (MSG,  id) ]
     > val i = proc id
     > send i "hello"
     > recv i
