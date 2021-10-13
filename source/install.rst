@@ -65,6 +65,8 @@ you always import the prelude and open the necessary namespaces.
 Lastly, you can provide commands directly to the interpreter and
 use it as a simple command-line calculator.
 
+.. code-block:: bash
+
     user$ egel -e "1+1"
     2
 
