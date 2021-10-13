@@ -21,6 +21,9 @@ text in the distribution.
 Using the interpreter
 ---------------------
 
+The interpreter supports various modes: batch processing, REPL
+(read-eval-print-loop), and direct commands.
+
 A number of example scripts are provided in the examples directory.
 If you set up your system correctly, you can run any of them
 with the command `egel example.eg`.
@@ -44,6 +47,7 @@ expressions.
 
 .. code-block:: egel
 
+    user$ egel
     >> 1 + 2
     3
 
@@ -57,6 +61,12 @@ you always import the prelude and open the necessary namespaces.
     >> using List
     >> foldl (+) 0 {1,2,3}
     6
+    
+Lastly, you can provide commands directly to the interpreter and
+use it as a simple command-line calculator.
+
+    user$ egel -e "1+1"
+    2
 
 .. _Github: https://github.com/egel-lang/
 
