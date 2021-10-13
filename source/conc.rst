@@ -3,7 +3,7 @@ Concurrency
 
 Because Egel is a term rewrite language, it is trivial
 to rewrite terms in parallel. Concurrency is provided
-through a combinator.
+through a parallel combinator and a process abstraction.
 
 Parallel rewriting
 ------------------
@@ -88,3 +88,23 @@ Nifty, huh?
     System threads are a bit heavyweight and easy to run out
     of. On my machine, I can start upto roughly 20,000 threads.
     Go easy on `pfib`!
+
+Processes
+---------
+
+Process abstractions model 'mealy machines', for every input provided
+an output, and a continuation, is generated. A simple example is 
+provided below.
+
+.. code-block:: egel
+
+    > def id = [ X -> (X,  id) ]
+    > val i = proc id
+    > send i "hello"
+    > recv i
+    "hello"
+    > halt i
+
+Note the use of `val`, reduction before assignment will start one process
+on the background. This is a simple example, likely in the continuation
+a state will be passed around.
