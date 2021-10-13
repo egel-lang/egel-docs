@@ -106,5 +106,5 @@ provided below.
     > halt i
 
 Note the use of `val`, reduction before assignment will start one process
-on the background. This is a simple example, likely in the continuation
-a state will be passed around.
+on the background. This is a simple example, in most use cases likely in 
+the continuation a state will be passed around.
