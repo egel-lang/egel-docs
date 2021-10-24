@@ -67,8 +67,8 @@ use it as a simple command-line calculator.
 
 .. code-block:: bash
 
-    user$ egel -e "1+1"
-    2
+    user$ egel fib.eg -e "using Fibonnaci;; fib 5"
+    5
 
 .. _Github: https://github.com/egel-lang/
 
