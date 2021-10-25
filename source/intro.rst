@@ -1,7 +1,7 @@
 Introduction
 ============
 
-Egel is a small toy language based on untyped eager combinator rewriting. Or, 
+Egel is a small scripting language based on untyped eager combinator rewriting. Or, 
 equivalently, it is an untyped lambda calculus with constants and strict semantics.
 
 It roughly falls into the same category of combinator languages like SASL/KRC and conceptually
