@@ -121,6 +121,6 @@ lambda abstractions you sometimes want to get rid off.
 
 .. code-block:: egel
 
-     val x = heavy_computation somenumber
+     val x = ackermann 5 4
      
      def main = (x, x)
