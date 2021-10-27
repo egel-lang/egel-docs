@@ -28,7 +28,7 @@ You can run the example with the Egel interpreter.
 Interactive Mode
 ----------------
 
-Apart from batch mode, you can also run the intpreter
+Apart from batch mode, you can also run the interpreter
 interactively.
 
 The interpreter starts with a clean slate, you'll usually
