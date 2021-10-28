@@ -1,8 +1,8 @@
 Discussion
 ==========
 
-Egel is a untyped functional scripting language implementing an eager 
-untyped combinator calculus as a term rewriting system on a directed 
+Egel is a untyped functional scripting language based on an eager 
+combinator calculus implemented as a term rewriting system on a directed 
 acyclic graph (DAG) through lifting C++.
 
 What does that mean? You can easily conclude a number of things
