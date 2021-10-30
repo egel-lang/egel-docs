@@ -25,24 +25,6 @@ You can run the example with the Egel interpreter.
     user$ egel hello.eg
     Hello world!
 
-Interactive Mode
-----------------
-
-Apart from batch mode, you can also run the interpreter
-interactively.
-
-The interpreter starts with a clean slate, you'll usually
-want to start of with a `using System` directive to access 
-the built-in combinators.
-
-.. code-block:: bash
-
-    user$ egel
-    > using System
-    > def fac = [ 0 -> 1 | N * fac (N - 1) ]
-    > fac 5
-    120
-
 Adding namespaces
 -----------------
 
