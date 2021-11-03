@@ -34,7 +34,7 @@ of `par`.
 
     >> using System
     >> par [ X -> X ] [ X -> X ]
-    (System:tuple System:nop System:nop)
+    (System:tuple System:none System:none)
 
 Hardly interesting.
 
