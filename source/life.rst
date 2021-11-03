@@ -108,13 +108,13 @@ cell for that coordinate.
 
     def printboard =
         [ BOARD ->
-            foldl [_ XX -> map [(X Y) -> printcell (BOARD X Y)] XX; print "\n" ] nop coords ]
+            foldl [_ XX -> map [(X Y) -> printcell (BOARD X Y)] XX; print "\n" ] none coords ]
 
 .. note:: 
 
     Though Egel combinators may be side-effecting, they must reduce to a value.
     `IO:print` will print all its arguments but will reduce to the uninformative
-    value `System:nop`. Often, with side-effecting calculations these values
+    value `System:none`. Often, with side-effecting calculations these values
     are simply discarded. The semicolon separates such statements.
 
 Generations
@@ -169,7 +169,7 @@ We print three generations of a board with a blinker.
         let GEN0 = blinker empty in
         let GEN1 = updateboard GEN0 in
         let GEN2 = updateboard GEN1 in
-            foldl [_ G -> print "generation:\n"; printboard G ] nop {GEN0, GEN1, GEN2}
+            foldl [_ G -> print "generation:\n"; printboard G ] none {GEN0, GEN1, GEN2}
 
 And that wraps it up. A real Egel application.
 
